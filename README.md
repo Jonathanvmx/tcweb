@@ -1,11 +1,11 @@
 # 📋 Formulario
 
 ## 📖 Descripción
+
 Aplicación Web que implementa un formulario completo.
 
-## ✅ Etiquetas HTML5 Implementadas
+### Formulario Principal
 
-### Formulario Principal:
 - ✅ `<form>` - Contenedor principal del formulario
 - ✅ `<input>` - Campos de entrada (text, email, number, tel, date, time, url, color, range)
 - ✅ `<label>` - Etiquetas para campos
@@ -20,13 +20,15 @@ Aplicación Web que implementa un formulario completo.
 
 ## 🚀 Características
 
-### Frontend:
+### Frontend
+
 - 📱 **Diseño Responsivo**
 - ✨ **Validación en tiempo real**
 - 🔍 **Vista previa de datos**
 - 📋 **Organización por secciones**
 
-### Backend:
+### Backend
+
 - 🗄️ **Servidor Express.js**
 - 📊 **Procesamiento de datos**
 - 🖥️ **Logs en consola**
@@ -49,24 +51,25 @@ tcweb/
     └── index.html        # Formulario principal
 ```
 
-### 3. Abrir en el navegador:
+### 3. Abrir en el navegador
+
 ```
 http://localhost:8080
 ```
 
 ## Tipos de Input Implementados
 
-| Tipo | Descripción | Validación |
-|------|-------------|------------|
-| `text` | Nombre | Mínimo 2 caracteres |
-| `number` | Edad | Entre 1 y 120 |
-| `email` | Correo electrónico | Formato válido |
-| `tel` | Teléfono | Con datalist de sugerencias |
-| `date` | Fecha de nacimiento | - |
-| `time` | Hora de contacto | - |
-| `url` | Sitio web personal | - |
-| `color` | Color favorito | - |
-| `range` | Nivel de experiencia | 1-10 con output |
+| Tipo     | Descripción          | Validación                  |
+| -------- | -------------------- | --------------------------- |
+| `text`   | Nombre               | Mínimo 2 caracteres         |
+| `number` | Edad                 | Entre 1 y 120               |
+| `email`  | Correo electrónico   | Formato válido              |
+| `tel`    | Teléfono             | Con datalist de sugerencias |
+| `date`   | Fecha de nacimiento  | -                           |
+| `time`   | Hora de contacto     | -                           |
+| `url`    | Sitio web personal   | -                           |
+| `color`  | Color favorito       | -                           |
+| `range`  | Nivel de experiencia | 1-10 con output             |
 
 ## Funcionalidades JavaScript
 
@@ -80,10 +83,11 @@ http://localhost:8080
 ## 📊 Respuesta del Servidor
 
 Cuando el formulario se envía:
-1. 📡 Los datos se envían al servidor Express.js
-2. 🖥️ Se muestran en la consola del servidor
-3. 📋 Se genera una tabla HTML5 con todos los datos
-4. ✅ El usuario ve una página de confirmación
+
+1. Los datos se envían al servidor Express.js
+2. Se muestran en la consola del servidor
+3. Se genera una tabla HTML5 con todos los datos
+4. El usuario ve una página de confirmación
 
 ## 🔧 Tecnologías Utilizadas
 
@@ -93,11 +97,3 @@ Cuando el formulario se envía:
 - **Node.js** - Runtime del servidor
 - **Express.js** - Framework web
 - **Nodemon** - Desarrollo con recarga automática
-
-## 📈 Cumplimiento de Requerimientos
-
-**Etapa 1**: Todas las etiquetas HTML5 fueron implementadas
-**Etapa 2**: Aplicación Node.js y Express.js
-**Frontend**: Formulario index.html completo
-**Backend**: Procesamiento y respuesta de datos
-**Documentación**: Proyecto completamente documentado
