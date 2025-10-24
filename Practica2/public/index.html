@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario — Práctica 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Práctica 2 — Formulario con etiquetas semánticas</h1>
+    <p class="muted">Usa <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;aside&gt;</code>.</p>
+  </header>
+
+  <main>
+    <article aria-label="Formulario de captura">
+      <section aria-labelledby="datos-estudiante">
+        <h2 id="datos-estudiante">Datos del estudiante</h2>
+        <form method="POST" action="/procesar">
+          <div class="grid">
+            <label>Apellido paterno<input name="apellido_paterno" required></label>
+            <label>Apellido materno<input name="apellido_materno" required></label>
+            <label>Nombre(s)<input name="nombres" required></label>
+            <label>Boleta<input name="boleta" required></label>
+            <label>Grupo<input name="grupo" required></label>
+            <label>Correo<input type="email" name="correo" required></label>
+          </div>
+
+          <section aria-labelledby="tema">
+            <h3 id="tema">Tema del mensaje</h3>
+            <label>Tema<select name="tema">
+              <option>Consulta</option>
+              <option>Retroalimentación</option>
+              <option>Soporte</option>
+            </select></label>
+            <label>Mensaje<textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea></label>
+          </section>
+
+          <label><input type="checkbox" name="acepta_terminos" value="1"> Acepto los términos del curso</label>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </article>
+
+    <aside aria-label="Instrucciones">
+      <h2>Instrucciones</h2>
+      <ol>
+        <li>Llena todos los campos.</li>
+        <li>Envía el formulario para ver la página generada por el Back-End.</li>
+      </ol>
+      <p class="muted">El servidor corre en el puerto 8080.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <small>&copy; ESCOM IPN grupo 4BM1</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "practica2-app",
+  "version": "1.0.0",
+  "description": "Aplicación Web estructural (semántica) con Express para Práctica 2",
+  "main": "aplicacion.js",
+  "type": "module",
+  "scripts": {
+    "start": "node aplicacion.js",
+    "dev": "node aplicacion.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "body-parser": "^1.20.2"
+  },
+  "engines": {
+    "node": "18.12.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
